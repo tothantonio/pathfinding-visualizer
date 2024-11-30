@@ -35,8 +35,7 @@ export const PathFindingProvider = ({children} : {children: ReactNode}) => {
           setGrid,
           isGraphVisualized,
           setIsGraphVisualized,
-        }}
-      >(children)</PathFindingContext.Provider>
+        }}>{children}
+      </PathFindingContext.Provider>
     )
-    
 }
