@@ -72,3 +72,11 @@ Uses `useState` to manage the state and `createContext` to create the context.
 Uses `useState` to manage state and `createContext` to create the context.
 
 `useSpeed.tsx` is a custom hook to acces the `SpeedContext`.
+
+`Grid.tsx` is a component that renders the grid for the pathfinding visualization.
+It uses the `usePathFinding` hook to access the grid state from the `PathFindingContext`.
+The grid is displayed as a series of rows and columns, with each cell represented by a `Tile` component.
+
+`Tile.tsx` is a component that represents a single cell in the grid.
+It receives properties such as `row`, `col`, `isEnd`, `isStart`, `isPath`, `isTraversed`, and `isWall` to determine its appearance.
+The `Tile` component uses these properties to apply different styles, such as a green background for the start tile, a red background for the end tile, and other colors for different states.
