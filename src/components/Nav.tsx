@@ -8,8 +8,9 @@ import { useState } from "react";
 import { runMazeAlgorithm } from "../utils/runMazeAlgorithm";
 import { useSpeed } from "../hooks/useSpeed";
 
+
 export function Nav() {
-  const { maze, setMaze, grid } = usePathFinding();
+  const { maze, setMaze, grid, setGrid, setIsGraphVisualized} = usePathFinding();
   const { startTile, endTile } = useTile();
   const [isDisabled, setIsDisabled] = useState(false);
   const { speed } = useSpeed();
@@ -26,6 +27,9 @@ export function Nav() {
     setIsDisabled(true);
     //runMazeAlgorithm
     runMazeAlgorithm({ maze, grid, startTile, endTile, setIsDisabled, speed });
+    const newGrid = grid.slice();
+    setGrid(newGrid);
+    setIsGraphVisualized(false);
   };
 
   return (
