@@ -48,3 +48,16 @@ export default tseslint.config({
   },
 })
 ```
+`App.tsx` is the main application component.
+It wraps the application in the `PathFindingProvider` context
+
+`PathFindingContext.tsx` defines `PathFindingContext` and `PathFindingProvider`
+Manages states for the pathfinding algorithm, maze type, grid and visualization status.
+Uses `useState` to manage the state and `createContext` to create the context.
+
+`usePathFinding.tsx` is a custom hook to acces `PathFindinContext`.
+Ensures the hook is used within a `PathFindingProvider`.
+
+- `constants.ts` defines constants used throughout the application
+- `helpers.ts` contains helper functions for the application
+- `types.ts` defines types used in the application(AlgorithmType, MazeType, TileType, GridType)
