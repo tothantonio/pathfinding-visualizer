@@ -2,6 +2,7 @@ import { GridType, SpeedType, TileType } from "../../../utils/types"
 import { horizontalDivision } from "./horizontalDivision"
 import { verticalDivision } from "./verticalDivision"
 
+
 export default async function recursiveDivision({
     grid,
     startTile,
@@ -29,11 +30,28 @@ export default async function recursiveDivision({
 
     if(height > width) {
         await horizontalDivision({
-            // ...existing code...
-        });
+            grid,
+            startTile,
+            endTile,
+            row,
+            col,
+            height,
+            width,
+            setIsDisabled,
+            speed
+        })
     } else {
         await verticalDivision({
-            // ...existing code...
-        });
+            grid,
+            startTile,
+            endTile,
+            row,
+            col,
+            height,
+            width,
+            setIsDisabled,
+            speed
+        })
     }
+
 }
