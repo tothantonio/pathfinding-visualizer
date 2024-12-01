@@ -105,3 +105,18 @@ This file contains the recursiveDivision function, which is the main function fo
 
 `horizontalDivision.ts`
 This file contains the horizontalDivision function, which is part of the recursive division maze generation algorithm. It creates a horizontal wall with a passage and then recursively divides the remaining sections.
+
+`runPathFindingAlgorithm.ts`
+This file defines the runPathFindingAlgorithm function, which takes an algorithm type, grid, start tile, and end tile as input. It uses a switch statement to determine which pathfinding algorithm to run. Currently, it only supports BFS and defaults to BFS if no matching algorithm is found.
+
+`isInQueue.ts`
+This file defines the isInQueue function, which checks if a given tile is present in a queue. It iterates through the queue and uses the isEqual helper function to compare tiles.
+
+`getUntraversedNeighbors.ts`
+This file defines the getUntraversedNeighbors function, which returns the untraversed neighbors of a given tile in the grid. It checks the tiles in the four possible directions (up, down, left, right) and filters out the traversed ones.
+
+`bfs.ts`
+This file defines the bfs function, which implements the Breadth-First Search (BFS) algorithm. It initializes the start tile, processes each tile in the queue, and explores its untraversed neighbors. It also constructs the path from the end tile back to the start tile.
+
+Nav.tsx
+This file defines the Nav component, which includes the UI elements for selecting a maze and pathfinding algorithm, and a play button to run the visualizer. It includes handlers for generating a maze and running the pathfinding algorithm, logging the traversed tiles and path to the console.
