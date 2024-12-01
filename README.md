@@ -90,3 +90,18 @@ The `Tile` component uses these properties to apply different styles, such as a 
 `Select.tsx` defines a Select component that renders a dropdown menu. It takes in props for the current value, change handler, options, label, and disabled state. It is used for selecting maze algorithms and speeds.
 
 `PlayButton.tsx` defines a PlayButton component that renders a button to start or reset the visualization. It takes in props for the click handler, disabled state, and whether the graph is currently visualized. The button displays a play icon or a reset icon based on the visualization state.
+
+`runMazeAlgorithm.ts`
+This file contains the runMazeAlgorithm function, which selects and runs a maze generation algorithm based on the provided maze type. It supports two algorithms: BINARY_TREE and RECURSIVE_DIVISION. The function also handles enabling and disabling the UI during the maze generation process.
+
+`constructBorder.ts`
+This file contains the constructBorder function, which constructs a border of walls around the grid. It iterates over the grid's edges and marks the tiles as walls, except for the start and end tiles.
+
+`verticalDivision.ts`
+This file contains the verticalDivision function, which is part of the recursive division maze generation algorithm. It creates a vertical wall with a passage and then recursively divides the remaining sections.
+
+`recursiveDivision.ts`
+This file contains the recursiveDivision function, which is the main function for the recursive division maze generation algorithm. It decides whether to divide the grid horizontally or vertically based on the dimensions and then calls the respective division function.
+
+`horizontalDivision.ts`
+This file contains the horizontalDivision function, which is part of the recursive division maze generation algorithm. It creates a horizontal wall with a passage and then recursively divides the remaining sections.
