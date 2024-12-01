@@ -120,3 +120,5 @@ This file defines the bfs function, which implements the Breadth-First Search (B
 
 Nav.tsx
 This file defines the Nav component, which includes the UI elements for selecting a maze and pathfinding algorithm, and a play button to run the visualizer. It includes handlers for generating a maze and running the pathfinding algorithm, logging the traversed tiles and path to the console.
+
+The algo does not work for Binary Tree maze, idk why, it does not see the walls.
