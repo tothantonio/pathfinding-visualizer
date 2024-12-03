@@ -12,7 +12,7 @@ export const bfs = (grid: GridType, startTile: TileType, endTile: TileType) => {
     const unTraversed = [base];
 
     while(unTraversed.length) {
-        const currentTile = unTraversed.shift() as TileType;
+        const currentTile = unTraversed.shift()!;
         if(currentTile.isWall) continue;
         if(currentTile.distance === Infinity) break;
         currentTile.isTraversed = true;

@@ -38,7 +38,6 @@ export const PATH_TILE_STYLE = TILE_STYLE + " bg-green-500";
 
 export const MAZES: MazeSelectType[] = [
   { name: "No Maze", value: "NONE" },
-  { name: "Binary Tree", value: "BINARY_TREE" },
   { name: "Recursive Division", value: "RECURSIVE_DIVISION" },
 ];
 
