@@ -118,7 +118,5 @@ This file defines the getUntraversedNeighbors function, which returns the untrav
 `bfs.ts`
 This file defines the bfs function, which implements the Breadth-First Search (BFS) algorithm. It initializes the start tile, processes each tile in the queue, and explores its untraversed neighbors. It also constructs the path from the end tile back to the start tile.
 
-Nav.tsx
+'Nav.tsx'
 This file defines the Nav component, which includes the UI elements for selecting a maze and pathfinding algorithm, and a play button to run the visualizer. It includes handlers for generating a maze and running the pathfinding algorithm, logging the traversed tiles and path to the console.
-
-The algo does not work for Binary Tree maze, idk why, it does not see the walls.
