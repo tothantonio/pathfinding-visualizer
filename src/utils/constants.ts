@@ -39,18 +39,20 @@ export const PATH_TILE_STYLE = TILE_STYLE + " bg-green-500";
 export const MAZES: MazeSelectType[] = [
   { name: "No Maze", value: "NONE" },
   { name: "Recursive Division", value: "RECURSIVE_DIVISION" },
+  { name: "Binary Tree", value: "BINARY_TREE" },
+  { name: "Kruskal's Algorithm", value: "KRUSKAL" },
 ];
 
-export const PATHFINDING_ALGORITHMS: AlgorithmSelectType[]  = [
-  {name: "Breadth First Search", value: "BFS"},
-  {name: "Depth First Search", value: "DFS"},
-]
+export const PATHFINDING_ALGORITHMS: AlgorithmSelectType[] = [
+  { name: "Breadth First Search", value: "BFS" },
+  { name: "Depth First Search", value: "DFS" },
+];
 
 export const SPEEDS: SpeedSelectType[] = [
   { name: "Slow", value: 2 },
   { name: "Average", value: 1 },
   { name: "Fast", value: 0.5 },
-]
+];
 
 export const SLEEP_TIME = 8;
 export const EXTENDED_SLEEP_TIME = 30;

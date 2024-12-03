@@ -2,6 +2,8 @@ import { MazeType, GridType, TileType, SpeedType } from './types';
 import { constructBorder } from './constructBorder';
 import { MAX_COLS, MAX_ROWS, SPEEDS } from './constants';
 import recursiveDivision from '../lib/algorithms/maze/recursiveDivision';
+import kruskal from '../lib/algorithms/maze/kruskal';
+import { binaryTree } from '../lib/algorithms/maze/binaryTree';
 
 export const runMazeAlgorithm = async ({
     maze,
@@ -18,7 +20,10 @@ export const runMazeAlgorithm = async ({
     setIsDisabled: (isDisabled: boolean) => void;
     speed: SpeedType;
 }) => {
-     if(maze == "RECURSIVE_DIVISION") {
+    if (maze == "BINARY_TREE") {
+        await binaryTree(grid, startTile, endTile, setIsDisabled, speed);
+    }
+    else if(maze == "RECURSIVE_DIVISION") {
         const currentSpeed = SPEEDS.find((s) => s.value === speed)!.value ?? 2
         await constructBorder(grid, startTile, endTile);
         await recursiveDivision({
@@ -35,5 +40,7 @@ export const runMazeAlgorithm = async ({
         setTimeout(() => {
             setIsDisabled(false);
         }, 800 * currentSpeed);
+    } else if (maze == "KRUSKAL") {
+        await kruskal(grid, startTile, endTile, setIsDisabled, speed);
     }
 }

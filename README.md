@@ -83,6 +83,10 @@ The `Tile` component uses these properties to apply different styles, such as a 
 
 `runMazeAlgorithm.ts` contains the runMazeAlgorithm function, which runs the selected maze algorithm on the grid. It currently supports the "BINARY_TREE" maze algorithm and uses the binaryTree function to generate the maze.
 
+`createWall.ts` ontains the createWall function, which creates walls on the grid. It uses a delay based on the selected speed to animate the wall creation process
+
+`binaryTree.ts` contains the implementation of the "Binary Tree" maze algorithm. The binaryTree function generates a maze using the binary tree algorithm and updates the grid accordingly. It also creates walls and destroys some of them to form the maze.
+
 `Select.tsx` defines a Select component that renders a dropdown menu. It takes in props for the current value, change handler, options, label, and disabled state. It is used for selecting maze algorithms and speeds.
 
 `PlayButton.tsx` defines a PlayButton component that renders a button to start or reset the visualization. It takes in props for the click handler, disabled state, and whether the graph is currently visualized. The button displays a play icon or a reset icon based on the visualization state.
