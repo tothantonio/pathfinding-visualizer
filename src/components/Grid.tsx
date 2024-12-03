@@ -42,23 +42,18 @@ export function Grid({
   return (
     <div
       className={twMerge(
-        //base classes
+        // base classes
         "flex items-center flex-col justify-center border-sky-300 mt-3",
-        //controlling grid height
-        `lg:min-h-[${MAX_ROWS * 17}px]  md:min-h-[${
-          MAX_ROWS * 15
-        }px] xs:min-h-[${MAX_ROWS * 8}px] min-h-[${MAX_ROWS * 7}px]`,
-        //controlling grid width
-        `lg:w-[${MAX_COLS * 17}px] md:w-[${MAX_COLS * 15}px] xs:w-[${
-          MAX_COLS * 8
-        }px] w-[${MAX_COLS * 7}px]`
+        // controlling grid height
+        `lg:min-h-[${MAX_ROWS * 10}px] md:min-h-[${MAX_ROWS * 8}px] xs:min-h-[${MAX_ROWS * 5}px] min-h-[${MAX_ROWS * 4}px]`,
+        // controlling grid width
+        `lg:w-[${MAX_COLS * 10}px] md:w-[${MAX_COLS * 8}px] xs:w-[${MAX_COLS * 5}px] w-[${MAX_COLS * 4}px]`
       )}
     >
       {grid.map((r, rowIndex) => (
         <div key={rowIndex} className="flex">
           {r.map((tile, tileIndex) => {
-            const { row, col, isEnd, isStart, isPath, isTraversed, isWall } =
-              tile;
+            const { row, col, isEnd, isStart, isPath, isTraversed, isWall } = tile;
             return (
               <Tile
                 key={tileIndex}
