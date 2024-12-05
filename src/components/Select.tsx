@@ -10,7 +10,7 @@ export function Select({
   value: string | number;
   label: string;
   onChange: (value: ChangeEvent<HTMLSelectElement>) => void;
-  options: { value: string | number; name: string }[];
+  options: { value: string | number; name: string}[];
   isDisabled?: boolean;
 }) {
   return (
