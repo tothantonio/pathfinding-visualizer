@@ -1,4 +1,4 @@
-export type AlgorithmType = "BFS" | "DFS";
+export type AlgorithmType = "BFS" | "DFS" |"DIJKSTRA";
 export type AlgorithmSelectType = {
   name: string;
   value: AlgorithmType;

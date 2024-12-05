@@ -118,5 +118,14 @@ This file defines the getUntraversedNeighbors function, which returns the untrav
 `bfs.ts`
 This file defines the bfs function, which implements the Breadth-First Search (BFS) algorithm. It initializes the start tile, processes each tile in the queue, and explores its untraversed neighbors. It also constructs the path from the end tile back to the start tile.
 
-'Nav.tsx'
+`Nav.tsx`
 This file defines the Nav component, which includes the UI elements for selecting a maze and pathfinding algorithm, and a play button to run the visualizer. It includes handlers for generating a maze and running the pathfinding algorithm, logging the traversed tiles and path to the console.
+
+`dijkstra.ts`
+Dijkstra's algorithm is used to find the shortest path in a weighted graph.
+It uses a priority queue (or min-heap) to explore the node with the smallest known distance from the start node.
+It updates the shortest path estimates for each node based on the weights of the edges.
+In my implementation, BFS and DIJKSTRA are quite similar because my graph is not weighted. 
+BFS is used for unweighted graphs and explores nodes level by level.
+Dijkstra's Algorithm is used for weighted graphs and explores nodes based on the smallest known distance.
+

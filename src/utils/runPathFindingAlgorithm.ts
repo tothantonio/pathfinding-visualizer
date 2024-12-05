@@ -1,6 +1,7 @@
 import { bfs } from "../lib/algorithms/pathfinding/bfs";
 import { AlgorithmType, GridType, TileType } from "./types";
 import { dfs } from "../lib/algorithms/pathfinding/dfs";
+import { dijkstra } from "../lib/algorithms/pathfinding/dijkstra";
 
 export const runPathFindingAlgorithm = ({
   algorithm,
@@ -18,6 +19,8 @@ export const runPathFindingAlgorithm = ({
       return bfs(grid, startTile, endTile);
     case "DFS":
       return dfs(grid, startTile, endTile);
+    case "DIJKSTRA":
+      return dijkstra(grid, startTile, endTile);
     default:
       return bfs(grid, startTile, endTile);
   }
