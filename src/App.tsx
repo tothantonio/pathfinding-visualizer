@@ -18,7 +18,7 @@ function App() {
             <Grid isVisualizationRunningRef={isVisualizationRunningRef} />
           </div>
           <Footer />
-        </SpeedProvider>
+        </SpeedProvider>  
       </TileProvider>
     </PathFindingProvider>
   );
