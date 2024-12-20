@@ -4,8 +4,7 @@
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. Project Structure
-3. Components
+2. Components
   - App
   - Nav
   - Grid
@@ -13,20 +12,20 @@
   - Select
   - PlayButton
   - Footer
-4. Context
+3. Context
   - PathFindingContext
   - SpeedContext
   - TileContext
-5. Hooks
+4. Hooks
   - usePathFinding
   - useSpeed
   - useTile
-6. Utilities
+5. Utilities
   - constants
   - helpers
   - resetGrid
   - animatePath
-7. Algorithms
+6. Algorithms
   - PathFinding Algorithms
     - BFS
     - DFS
@@ -34,50 +33,64 @@
   - Maze Generation Algorithms
     - Recursive Division
     - Binary Tree
-8. Running the project
+7. Running the project
 
 # Introduction
 The Pathfinding Visualizer is a web application that allows users to visualize various pathfinding algorithms and maze generation techniques. It provides an interactive grid where users can place start and end points, walls, and see the algorithms in action.
 
-# Project Structure
+# Components
+`App.tsx` - The main component that wraps the entire application with necessary providers and renders the main layout including the navigation bar, grid, theme switch, and footer.
 
-`
-src/
-├── components/
-│   ├── App.tsx
-│   ├── Nav.tsx
-│   ├── Grid.tsx
-│   ├── Tile.tsx
-│   ├── Select.tsx
-│   ├── PlayButton.tsx
-│   ├── Footer.tsx
-│   ├── ThemeSwitch.tsx
-├── context/
-│   ├── PathFindingContext.tsx
-│   ├── SpeedContext.tsx
-│   ├── TileContext.tsx
-│   ├── ThemeContext.tsx
-├── hooks/
-│   ├── usePathFinding.ts
-│   ├── useSpeed.ts
-│   ├── useTile.ts
-├── utils/
-│   ├── constants.ts
-│   ├── helpers.ts
-│   ├── resetGrid.ts
-│   ├── animatePath.ts
-│   ├── runMazeAlgorithm.ts
-│   ├── runPathFindingAlgorithm.ts
-│   ├── mazeGenerators/
-│   │   ├── recursiveDivision.ts
-│   │   ├── binaryTree.ts
-│   │   ├── kruskalMaze.ts
-│   │   ├── primMaze.ts
-│   ├── pathfinding/
-│   │   ├── bfs.ts
-│   │   ├── dfs.ts
-│   │   ├── dijkstra.ts
-├── index.css
-├── main.tsx
-├── tailwind.config.js
-`
+`Nav.tsx` - The navigation component that includes UI elements for selecting a maze, pathfinding algorithm, speed, and a play button to run the visualizer.
+
+`Grid.tsx` - The grid component that renders the grid of tiles. It handles mouse events for placing walls and updating the grid state.
+
+`Tile.tsx` - The tile component that represents a single cell in the grid. It handles mouse events and updates its appearance based on its state.
+
+`Select.tsx` - A reusable select component that displays a dropdown menu with options. It includes a tooltip that shows additional information when hovering over options.
+
+`PlayButton.tsx` - A button component that starts the pathfinding visualization.
+
+# Context
+`PathFindingContext.tsx` - Provides the state and functions related to pathfinding algorithms and the grid.
+
+`SpeedContext.tsx` - Provides the state and functions related to the speed of the visualization.
+
+`TileContext.tsx` - Provides the state and functions related to the start and end tiles.
+
+# Hooks
+`usePathFinding.ts` - A custom hook that provides access to the pathfinding context.
+
+`useSpeed.ts` - A custom hook that provides access to the speed context.
+
+`useTile.ts` - A custom hook that provides access to the tile context.
+
+# Utilities
+`constants.ts` - Defines constants used throughout the application, including algorithm options, maze options, tile styles, and speed settings.
+
+`helpers.ts` - Provides helper functions for common tasks such as creating a new grid and checking if a tile is a start or end tile.
+
+`resetGrid.ts` - Resets the grid to its initial state.
+
+`animatePath.ts` - Animates the pathfinding process by updating the grid state over time.
+
+# Algorithms
+Pathfinding Algorithms:
+
+`bfs.ts` - Implements the Breadth-First Search algorithm for finding the shortest path in an unweighted graph.
+
+`dfs.ts` - Implements the Depth-First Search algorithm for exploring nodes by going as deep as possible along each branch before backtracking.
+
+`dijskstra.ts` - Implements Dijkstra's algorithm for finding the shortest path in a weighted graph.
+
+Maze Generation Algorithms
+
+`recursiveDivision.ts` - Implements the Recursive Division algorithm for generating mazes by recursively dividing the grid into smaller sections.
+
+`binaryTree.ts` - Implements the Binary Tree algorithm for generating mazes by randomly carving passages in a grid.
+
+# Running the project
+
+- npm install
+- npm start
+
