@@ -1,10 +1,11 @@
 ### Pathfinding Visualizer project in React + TypeScript + Vite
 
+![demo](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm0zYm4zYWxmdHBnN21tZzJ6M2M1dHd2NGx5MTAwMWNjMWd2aHQwbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vfKzcbKshehxtoUUro/giphy.webp);
 
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. Components
+2. [Components](#components)
   - App
   - Nav
   - Grid
@@ -12,20 +13,20 @@
   - Select
   - PlayButton
   - Footer
-3. Context
+3. [Context](#context)
   - PathFindingContext
   - SpeedContext
   - TileContext
-4. Hooks
+4. [Hooks](#hooks)
   - usePathFinding
   - useSpeed
   - useTile
-5. Utilities
+5. [Utilities](#utilities)
   - constants
   - helpers
   - resetGrid
   - animatePath
-6. Algorithms
+6. [Algorithms](#algorithms)
   - PathFinding Algorithms
     - BFS
     - DFS
@@ -33,7 +34,7 @@
   - Maze Generation Algorithms
     - Recursive Division
     - Binary Tree
-7. Running the project
+7. [Running the project](#running-the-project)
 
 # Introduction
 The Pathfinding Visualizer is a web application that allows users to visualize various pathfinding algorithms and maze generation techniques. It provides an interactive grid where users can place start and end points, walls, and see the algorithms in action.
