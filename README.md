@@ -37,7 +37,7 @@
 7. [Running the project](#running-the-project)
 
 # Introduction
-The Pathfinding Visualizer is a web application that allows users to visualize various pathfinding algorithms and maze generation techniques. It provides an interactive grid where users can place start and end points, walls, and see the algorithms in action.
+The Pathfinding Visualizer is a web application that allows users to visualize various pathfinding algorithms and maze generation techniques. It provides an interactive grid where users can place start and end points, walls, and see the algorithms in action. I chose Vite as framework because it provides fast and efficient development experience for web apps. It found it easy to configure, providing a simple and intuitive configuration system.
 
 # Components
 `App.tsx` - The main component that wraps the entire application with necessary providers and renders the main layout including the navigation bar, grid, theme switch, and footer.
