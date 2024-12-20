@@ -40,6 +40,8 @@
 The Pathfinding Visualizer is a web application that allows users to visualize various pathfinding algorithms and maze generation techniques. It provides an interactive grid where users can place start and end points, walls, and see the algorithms in action.
 
 # Project Structure
+
+`
 src/
 ├── components/
 │   ├── App.tsx
@@ -78,3 +80,4 @@ src/
 ├── index.css
 ├── main.tsx
 ├── tailwind.config.js
+`
