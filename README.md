@@ -102,5 +102,5 @@ Maze Generation Algorithms
 - npm run build
 
 4. Run tests:
--npm test
+- npm test
 
