@@ -1,6 +1,6 @@
 ### Pathfinding Visualizer project in React + TypeScript + Vite
 
-![demo](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm0zYm4zYWxmdHBnN21tZzJ6M2M1dHd2NGx5MTAwMWNjMWd2aHQwbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vfKzcbKshehxtoUUro/giphy.webp);
+![demo](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm0zYm4zYWxmdHBnN21tZzJ6M2M1dHd2NGx5MTAwMWNjMWd2aHQwbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vfKzcbKshehxtoUUro/giphy.webp)
 
 ## Table of Contents
 
