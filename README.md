@@ -48,7 +48,7 @@ The Pathfinding Visualizer is a web application that allows users to visualize v
 
 `Tile.tsx` - The tile component that represents a single cell in the grid. It handles mouse events and updates its appearance based on its state.
 
-`Select.tsx` - A reusable select component that displays a dropdown menu with options. It includes a tooltip that shows additional information when hovering over options.
+`Select.tsx` - A reusable select component that displays a dropdown menu with options.
 
 `PlayButton.tsx` - A button component that starts the pathfinding visualization.
 
