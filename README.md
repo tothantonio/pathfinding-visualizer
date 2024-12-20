@@ -92,6 +92,15 @@ Maze Generation Algorithms
 
 # Running the project
 
+1. Install Dependencies
 - npm install
+
+2. Start the dev server
 - npm start
+
+3. Build for Production
+- npm run build
+
+4. Run tests:
+-npm test
 
