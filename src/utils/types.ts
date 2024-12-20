@@ -2,12 +2,14 @@ export type AlgorithmType = "BFS" | "DFS" |"DIJKSTRA";
 export type AlgorithmSelectType = {
   name: string;
   value: AlgorithmType;
+  description?: string;
 }
 
-export type MazeType = "NONE" | "RECURSIVE_DIVISION" | "KRUSKAL" | "BINARY_TREE";
+export type MazeType = "NONE" | "RECURSIVE_DIVISION" | "BINARY_TREE";
 export interface MazeSelectType {
   name: string;
   value: MazeType;
+  description?: string;
 }
 
 export type TileType = {

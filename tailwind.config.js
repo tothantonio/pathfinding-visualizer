@@ -1,25 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: 'class',
   theme: {
     extend: {
       keyframes: {
         traversed: {
           "0%": {
             transform: "scale(0.3)",
-            backgroundColor: "#add8e6", // Light Blue
+            backgroundColor: "#60a5fa", 
             borderRadius: "100%",
           },
           "50%": {
-            backgroundColor: "#87ceeb", // Sky Blue
+            backgroundColor: "#3b82f6", 
           },
           "75%": {
             transform: "scale(1.2)",
-            backgroundColor: "#4682b4", // Steel Blue
+            backgroundColor: "#2563eb", 
           },
           "100%": {
             transform: "scale(1)",
-            backgroundColor: "#1e90ff", // Dodger Blue
+            backgroundColor: "#60a5fa", 
           },
         },
         path: {
@@ -56,7 +57,7 @@ export default {
       },
       animation: {
         traversed: "traversed 0.5s cubic-bezier(0, 0, 0.2, 1)",
-        path: "path 1.5s cubic-bezier(0, 0, 0.2, 1)",
+        path: "path 2s cubic-bezier(0, 0, 0.2, 1)",
         wall: "wall 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
       },
     },
